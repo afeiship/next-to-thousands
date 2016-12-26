@@ -1,0 +1,9 @@
+{
+  "name": "to-thousands",
+  "version": "1.0.0",
+  "description": "To  thousands for number.",
+  "main": "index.js",
+  "repository": "git@github.com:afeiship/to-thousands.git",
+  "author": "feizheng <1290657123@qq.com>",
+  "license": "MIT"
+}
