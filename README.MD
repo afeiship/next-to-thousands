@@ -13,7 +13,7 @@ yarn install afeiship/to-thousands
 
 + show code:
 ```javascript
-var toThousands = require('to-thousands');
+import toThousands from 'to-thousands';
 
 toThousands('10000')  //10,000
 toThousands('100')    //100
