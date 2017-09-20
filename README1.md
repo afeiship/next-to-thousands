@@ -1,4 +1,4 @@
-#to-thousands
+# to-thousands
 > To  thousands for number.
 
 ![to-thousands](https://travis-ci.org/afeiship/to-thousands.svg?branch=master)
