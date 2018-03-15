@@ -1,53 +1,19 @@
 var assert = require('assert');
-var toThousands = require('../index');
-describe('toThousands test main', function() {
+var nx = require('next-js-core2');
+require('../src/next-to-thousands');
 
-  describe('+number <=3', function() {
-    it("toThousands(10),'10'", function() {
-      assert.equal( toThousands(10),'10');
-    });
-    it("toThousands(100),'100'", function() {
-      assert.equal( toThousands(100),'100');
-    });
-  });
+describe('next/toThousands', function () {
 
+  it('nx.toThousands', function () {
+    var obj1 = {name: 'fei'};
+    var obj2 = {email: '1290657123@qq.com'};
 
-  describe('+number >3', function() {
-    it("toThousands(1000),'1,000'", function() {
-      assert.equal( toThousands(1000),'1,000');
-    });
-    it("toThousands(10000),'10,000'", function() {
-      assert.equal( toThousands(10000),'10,000');
-    });
-  });
+    var result = {};
 
-  describe('+number with float(point)', function() {
-    it("toThousands(1000.123),'1,000.123'", function() {
-      assert.equal( toThousands(1000.123),'1,000.123');
-    });
-    it("toThousands(10000.123),'10,000.123'", function() {
-      assert.equal( toThousands(10000.123),'10,000.123');
-    });
-    it("toThousands(20000.00),'20,000.00'", function() {
-      assert.equal( toThousands(20000.00),'20,000');
-    });
-  });
+    nx.toThousands(result, obj1, obj2);
 
-
-  describe('-number with float(point) <=3', function() {
-    it("toThousands(-100.123),'-100.123'", function() {
-      assert.equal( toThousands(-100.123),'-100.123');
-    });
-    it("toThousands(-100.123),'-100.123'", function() {
-      assert.equal( toThousands(-1000.123),'-1,000.123');
-    });
-  });
-
-
-  describe('-number with float(point) >3', function() {
-    it("toThousands(-12341400.123),'-12,341,400.123'", function() {
-      assert.equal( toThousands(-12341400.123),'-12,341,400.123');
-    });
+    assert.equal(result.name, obj1.name);
+    assert.equal(result.email, obj2.email);
   });
 
 });

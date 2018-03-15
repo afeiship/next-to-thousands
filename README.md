@@ -1,18 +1,12 @@
-# to-thousands
-> To  thousands for number.
+# next-to-thousands
+> To thousands for number.
 
-![to-thousands](https://travis-ci.org/afeiship/to-thousands.svg?branch=master)
-
-## usage:
-+ install:
+## install:
 ```bash
-npm install afeiship/to-thousands --save
-
-# OR
-yarn install afeiship/to-thousands
+npm install -S afeiship/next-to-thousands --registry=https://registry.npm.taobao.org
 ```
 
-+ show code:
+## usage:
 ```javascript
 import toThousands from 'to-thousands';
 
@@ -24,4 +18,4 @@ toThousands(1000,'|') //1|000
 
 
 ## todos:
-[ ] Add the method to next toolkits.
+- [x] Add the method to next toolkits.
