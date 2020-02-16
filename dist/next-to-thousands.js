@@ -1,15 +1,15 @@
 /*!
- * name: next-to-thousands
+ * name: @feizheng/next-to-thousands
+ * description: To  thousands for number.
  * url: https://github.com/afeiship/next-to-thousands
  * version: 1.0.0
- * date: 2019-11-15T02:40:16.291Z
+ * date: 2020-02-16 12:48:24
  * license: MIT
  */
 
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
-
+  var nx = global.nx || require('@feizheng/next-js-core2');
   var THOUSANDS_RE = /\d{1,3}(?=(\d{3})+$)/g;
   var POINT_RE = /^(\d+)((\.\d+)?)$/;
 

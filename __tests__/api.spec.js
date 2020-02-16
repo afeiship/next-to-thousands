@@ -1,7 +1,7 @@
-var nx = require('next-js-core2');
+const nx = require('@feizheng/next-js-core2');
 require('../src/next-to-thousands');
 
-describe('BasicTest', () => {
+describe('api.basic test', () => {
   test('1000 should return 1,000', function() {
     var res = nx.toThousands(1000);
     expect(res).toBe('1,000');

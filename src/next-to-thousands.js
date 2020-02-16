@@ -1,7 +1,6 @@
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
-
+  var nx = global.nx || require('@feizheng/next-js-core2');
   var THOUSANDS_RE = /\d{1,3}(?=(\d{3})+$)/g;
   var POINT_RE = /^(\d+)((\.\d+)?)$/;
 

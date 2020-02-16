@@ -1,21 +1,14 @@
 # next-to-thousands
-> To thousands for number.
+> To  thousands for number.
 
-## install:
+## installation
 ```bash
-npm install -S afeiship/next-to-thousands --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-to-thousands
 ```
 
-## usage:
-```javascript
-import toThousands from 'to-thousands';
+## usage
+```js
+import '@feizheng/next-to-thousands';
 
-toThousands('10000')  //10,000
-toThousands('100')    //100
-toThousands(10000)    //10,000
-toThousands(1000,'|') //1|000
+//DOCS here!
 ```
-
-
-## todos:
-- [x] Add the method to next toolkits.
