@@ -3,7 +3,7 @@
  * description: To thousands for number.
  * homepage: https://github.com/afeiship/next-to-thousands
  * version: 1.0.0
- * date: 2020-11-22 17:10:49
+ * date: 2020-11-22 17:12:23
  * license: MIT
  */
 
